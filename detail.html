@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ポケモン図鑑ガチャ</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <div>
+            ユーザ名　「<span id="userName"></span>」
+        </div>
+
+        <div class="space">
+            <button type="button" onclick="location.href='./listCard.html'">　図鑑　</button>
+            <button type="button" id="sound" onclick="audioSound();">　鳴き声　</button>
+        </div>
+
+        <div id="info"></div>
+        <div id="infoDetail"></div>
+
+        <div id="card" class="card">
+            <ul id="ul1" class="ul1Index"></ul>
+            <div class="bgType">
+                <div id="bgType1" class="bgType1"></div>
+                <div id="bgType2" class="bgType2"></div>
+            </div>
+        </div>
+
+        <audio id="audioSound">
+            <source src="" type="audio/mp3">
+        </audio>
+
+        <script src="./js/common.js"></script>
+        <script src="./js/detail.js"></script>
+    </body>
+</html>

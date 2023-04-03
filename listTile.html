@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ポケモン図鑑ガチャ</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <div>
+            ユーザ名　「<span id="userName"></span>」
+        </div>
+
+        <div class="space">
+            <button type="button" onclick="location.href='./index.html'">メイン画面へ</button>
+            <button type="button" onclick="location.href='./ranking.html'">ランキング</button>
+            <button type="button" onclick="logout();">ログアウト</button>
+        </div>
+
+        <div class="infoHead infoColor">
+            <div>
+                ガチャ回数　　　：<span id="gachaSum">0</span>
+            </div>
+            <div>
+                見つけた数　　　：<span id="countDex">0</span>/<span id="countDexSum">0</span>
+            </div>
+            <div>
+                色違い　　　　　：<span id="countShiny">0</span>
+            </div>
+            <div class="liRare4Default">
+                レア４（幻）　　：<span id="countRare4">0</span>/<span id="countRare4Sum">0</span>
+            </div>
+            <div class="liRare3Default">
+                レア３（伝説）　：<span id="countRare3">0</span>/<span id="countRare3Sum">0</span>
+            </div>
+            <div class="liRare2Default">
+                レア２（準伝説）：<span id="countRare2">0</span>/<span id="countRare2Sum">0</span>
+            </div>
+            <div class="liRare1Default">
+                レア１（御三家）：<span id="countRare1">0</span>/<span id="countRare1Sum">0</span>
+            </div>
+        </div>
+
+        <div id="info">
+            読み込み中...
+            <progress id="progress" value="0"></progress>
+        </div>
+        <div id="infoDetail"></div>
+
+        <div class="space">
+            <button type="button" onclick="location.href='./listCard.html'">　カード　</button>
+            <button type="button" onclick="location.href='./listTile.html'" disabled>　タイル　</button>
+            <button type="button" onclick="location.href='./listTable.html'">　　表　　</button>
+        </div>
+
+        <label>
+            <input type="checkbox" id="checkbox" onchange="checkbox();" disabled>見つけたポケモンだけ表示
+        </label>
+        
+        <ul id="ul1" class="ul1List"></ul>
+
+        <audio id="audioSound">
+            <source src="" type="audio/mp3">
+        </audio>
+
+        <script src="./js/common.js"></script>
+        <script src="./js/listTile.js"></script>
+        <script src="./js/list.js"></script>
+    </body>
+</html>
