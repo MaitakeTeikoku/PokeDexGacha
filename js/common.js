@@ -1,5 +1,5 @@
 // カードデータにアクセスするAPIのURLを指定
-const urlApi = 'https://script.google.com/macros/s/AKfycbw7htA9r40QT3cwLM4OZ_SUfLit2NWS9U1Tk9iZjMhxP0GWg3EJbcuRdt7V8Tvv4fgS/exec';
+const urlApi = 'https://script.google.com/macros/s/AKfycbzcxRiSdg0qpvrMHehU8KiW68wl-9IwEFj26781ZjccgAgu_HyUG2u4rsDx-8QLSqZY/exec';
 
 // タイプの日本語変換
 const typeJpn = {
