@@ -12,7 +12,8 @@ async function dexListCard(data) {
     }
 
     // PokeAPIからポケモンの情報を取得
-    for (i = 1; i <= data.length; ++i) {  
+    for (i = 1; i <= data.length; ++i) {
+        /*
         // PokeAPIに接続
         let res = await fetch("https://pokeapi.co/api/v2/pokemon/" + i);
         let resData = await res.json();
@@ -27,6 +28,18 @@ async function dexListCard(data) {
             // デフォルト
             imgSrc = resData['sprites']['other']['official-artwork']['front_default'];
         }
+        */
+        let numDexStr = String(i).padStart(4, '0');
+        let imgSrc;
+        // 色違いの判定
+        if (data[i-1] == "1") {
+            // 色違い
+            imgSrc = "./img/officialArtworkShiny/oaS" + numDexStr + ".png";
+        } else {
+            // デフォルト
+            imgSrc = "./img/officialArtworkDefault/oaD" + numDexStr + ".png";
+        }
+
 
         // 追加する要素を作成
         var li1 = document.createElement('li');
@@ -36,12 +49,14 @@ async function dexListCard(data) {
         li1.classList.add("li1");
         li1.classList.add("li1List");
         
+        /*
         let typeSum = "　";
+        */
         let name = "??????";
         
         // 取得しているか判定
         if (data[i-1] == "0" || data[i-1] == "1") {
-
+            /*
             // タイプ1を取得
             let type1 = resData['types'][0]['type']['name'];
             // タイプの日本語名取得
@@ -56,7 +71,8 @@ async function dexListCard(data) {
                 type2Jpn = typeJpn[type2];
                 typeSum = type1Jpn + " / " + type2Jpn;
             }
-
+            */
+            /*
             // PokeAPIに接続
             let resSpecies = await fetch("https://pokeapi.co/api/v2/pokemon-species/" + i);
             let resSpeciesData = await resSpecies.json();
@@ -68,6 +84,8 @@ async function dexListCard(data) {
                     break;
                 }
             }
+            */
+            name = pokeNamesList[numDexStr];
 
             (function(i){
                 // 詳細へのリンク
@@ -99,12 +117,6 @@ async function dexListCard(data) {
         li2Name.innerHTML = name;
         ul2.appendChild(li2Name);
         li2Name.classList.add("li2Name");
-
-        // タイプを追加
-        var li2Type = document.createElement('li');
-        li2Type.innerHTML = typeSum;
-        ul2.appendChild(li2Type);
-        li2Type.classList.add("li2Type");
 
         // レア度と色違いによって背景色を変更
         if (listRare4.includes(i)) {

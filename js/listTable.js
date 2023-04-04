@@ -26,7 +26,7 @@ async function dexListTable(data) {
 
         // 取得しているか判定
         if (data[i-1] == "0" || data[i-1] == "1") {
-
+            /*
             // PokeAPIに接続
             let resSpecies = await fetch("https://pokeapi.co/api/v2/pokemon-species/" + i);
             let resSpeciesData = await resSpecies.json();
@@ -38,7 +38,9 @@ async function dexListTable(data) {
                     break;
                 }
             }
-
+            */
+            let numDexStr = String(i).padStart(4, '0');
+            name = pokeNamesList[numDexStr];
             name = "<a href='./detail.html?dex=" + i + "&shiny=" + data[i-1] + "'>" + name + "</a>"
 
             tr.classList.add("trBright");

@@ -17,12 +17,12 @@ async function dexListTile(data) {
 
     // PokeAPIからポケモンの情報を取得
     for (i = 1; i <= data.length; ++i) {  
+        /*
         // PokeAPIに接続
         let res = await fetch("https://pokeapi.co/api/v2/pokemon/" + i);
         let resData = await res.json();
         // ポケモンの画像を取得
         let imgSrc;
-
         // 色違いの判定
         if (data[i-1] == "1") {
             // 色違い
@@ -30,6 +30,17 @@ async function dexListTile(data) {
         } else {
             // デフォルト
             imgSrc = resData['sprites']['front_default'];
+        }
+        */
+        let numDexStr = String(i).padStart(4, '0');
+        let imgSrc;
+        // 色違いの判定
+        if (data[i-1] == "1") {
+            // 色違い
+            imgSrc = "./img/frontShiny/frS" + numDexStr + ".png";
+        } else {
+            // デフォルト
+            imgSrc = "./img/frontDefault/frD" + numDexStr + ".png";
         }
 
         // 追加する要素を作成

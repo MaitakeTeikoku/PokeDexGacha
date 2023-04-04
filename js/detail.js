@@ -22,12 +22,12 @@ async function displayDetail() {
         valueRare = rareGet(numDex);
         valueShiny = false;
         if (params.get("shiny") == "1") {
-            valueShiny = true
+            valueShiny = true;
         }
     } else {
         window.location.href = './signIn.html';
     }
-
+    
     // カードを生成
     await createCard(numDex, valueShiny, valueRare);
     
