@@ -1,5 +1,5 @@
 // カードデータにアクセスするAPIのURLを指定
-const urlApi = 'https://script.google.com/macros/s/AKfycbxGmg35QHAQz8tRVccGJxet3QRmSmTvfiQAWaFNy0Once4OG0PYCxVgHSi7vwObcng/exec';
+const urlApi = 'https://script.google.com/macros/s/AKfycbwnOMmS3MZj7VgAX5KBsb-yIJDzgtrXiHBLpXW-1S3RtPCNj_yxtDwgBxB8CKifUoYN/exec';
 
 let gachaTodayMax;
 let dexRange;
@@ -130,31 +130,7 @@ function audioSoundSrcGet(numDex) {
 }
 
 // カードを作成する関数
-async function createCard(numDex, valueShiny, valueRare) {
-
-    // 背景用のタイプ色
-    const colors = {
-        normal: '#C6C6A7aa',
-        fire: '#F5AC78aa',
-        water: '#9DB7F5aa',
-        grass: '#A7DB8Daa',
-        electric: '#FAE078aa',
-        ice: '#BCE6E6aa',
-        fighting: '#D67873aa',
-        poison: '#C183C1aa',
-        ground: '#EBD69Daa',
-        flying: '#C6B7F5aa',
-        psychic: '#FA92B2aa',
-        bug: '#C6D16Eaa',
-        rock: '#D1C17Daa',
-        ghost: '#A292BCaa',
-        dragon: '#A27DFAaa',
-        dark: '#A29288aa',
-        steel: '#D1D1E0aa',
-        fairy: '#F4BDC9aa'
-    }
-
-    
+async function createCard(numDex, valueShiny, valueRare) {    
     // PokeAPIに接続
     const res = await fetch("https://pokeapi.co/api/v2/pokemon/" + numDex);
     const resData = await res.json();
@@ -196,6 +172,7 @@ async function createCard(numDex, valueShiny, valueRare) {
     */
     const name = pokeNamesList[numDexStr];
 
+    /*
     // タイプ1を取得
     const type1 = resData['types'][0]['type']['name'];
     // 色に変換
@@ -207,6 +184,16 @@ async function createCard(numDex, valueShiny, valueRare) {
         const type2 = resData['types'][1]['type']['name'];
         // 色に変換
         color2 = colors[type2];
+    }
+    */
+    const type1 = pokeTypesList[numDexStr][0];
+    const color1 = colors[type1];
+    const type2 = pokeTypesList[numDexStr][1];
+    const color2 = colors[type2];
+
+    let typeSum = typeJpn[type1];
+    if (type1 != type2) {
+        typeSum = typeJpn[type1] + " / " + typeJpn[type2];
     }
 
     // タイプに合わせて背景画像を変更
@@ -236,6 +223,12 @@ async function createCard(numDex, valueShiny, valueRare) {
     li2Name.innerHTML = name;
     ul2.appendChild(li2Name);
     li2Name.classList.add("li2Name");
+
+    // タイプを追加
+    var li2Type = document.createElement('li');
+    li2Type.innerHTML = typeSum;
+    ul2.appendChild(li2Type);
+    li2Type.classList.add("li2Type");
 
     // レア度と色違いによって背景色を変更
     switch (valueRare) {

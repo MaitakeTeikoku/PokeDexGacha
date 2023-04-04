@@ -1,4 +1,3 @@
-/*
 // タイプの日本語変換
 const typeJpn = {
     normal: 'ノーマル',
@@ -20,7 +19,28 @@ const typeJpn = {
     steel: 'はがね',
     fairy: 'フェアリー'
 };
-*/
+
+// 背景用のタイプ色
+const colors = {
+    normal: '#C6C6A7aa',
+    fire: '#F5AC78aa',
+    water: '#9DB7F5aa',
+    grass: '#A7DB8Daa',
+    electric: '#FAE078aa',
+    ice: '#BCE6E6aa',
+    fighting: '#D67873aa',
+    poison: '#C183C1aa',
+    ground: '#EBD69Daa',
+    flying: '#C6B7F5aa',
+    psychic: '#FA92B2aa',
+    bug: '#C6D16Eaa',
+    rock: '#D1C17Daa',
+    ghost: '#A292BCaa',
+    dragon: '#A27DFAaa',
+    dark: '#A29288aa',
+    steel: '#D1D1E0aa',
+    fairy: '#F4BDC9aa'
+}
 
 // ポケモンの日本語名
 const pokeNamesList = {
@@ -673,4 +693,2603 @@ const pokeNamesList = {
     "0647": "ケルディオ",
     "0648": "メロエッタ",
     "0649": "ゲノセクト"
+}
+
+const pokeTypesList = {
+    "0001": [
+        "grass",
+        "poison"
+    ],
+    "0002": [
+        "grass",
+        "poison"
+    ],
+    "0003": [
+        "grass",
+        "poison"
+    ],
+    "0004": [
+        "fire",
+        "fire"
+    ],
+    "0005": [
+        "fire",
+        "fire"
+    ],
+    "0006": [
+        "fire",
+        "flying"
+    ],
+    "0007": [
+        "water",
+        "water"
+    ],
+    "0008": [
+        "water",
+        "water"
+    ],
+    "0009": [
+        "water",
+        "water"
+    ],
+    "0010": [
+        "bug",
+        "bug"
+    ],
+    "0011": [
+        "bug",
+        "bug"
+    ],
+    "0012": [
+        "bug",
+        "flying"
+    ],
+    "0013": [
+        "bug",
+        "poison"
+    ],
+    "0014": [
+        "bug",
+        "poison"
+    ],
+    "0015": [
+        "bug",
+        "poison"
+    ],
+    "0016": [
+        "normal",
+        "flying"
+    ],
+    "0017": [
+        "normal",
+        "flying"
+    ],
+    "0018": [
+        "normal",
+        "flying"
+    ],
+    "0019": [
+        "normal",
+        "normal"
+    ],
+    "0020": [
+        "normal",
+        "normal"
+    ],
+    "0021": [
+        "normal",
+        "flying"
+    ],
+    "0022": [
+        "normal",
+        "flying"
+    ],
+    "0023": [
+        "poison",
+        "poison"
+    ],
+    "0024": [
+        "poison",
+        "poison"
+    ],
+    "0025": [
+        "electric",
+        "electric"
+    ],
+    "0026": [
+        "electric",
+        "electric"
+    ],
+    "0027": [
+        "ground",
+        "ground"
+    ],
+    "0028": [
+        "ground",
+        "ground"
+    ],
+    "0029": [
+        "poison",
+        "poison"
+    ],
+    "0030": [
+        "poison",
+        "poison"
+    ],
+    "0031": [
+        "poison",
+        "ground"
+    ],
+    "0032": [
+        "poison",
+        "poison"
+    ],
+    "0033": [
+        "poison",
+        "poison"
+    ],
+    "0034": [
+        "poison",
+        "ground"
+    ],
+    "0035": [
+        "fairy",
+        "fairy"
+    ],
+    "0036": [
+        "fairy",
+        "fairy"
+    ],
+    "0037": [
+        "fire",
+        "fire"
+    ],
+    "0038": [
+        "fire",
+        "fire"
+    ],
+    "0039": [
+        "normal",
+        "fairy"
+    ],
+    "0040": [
+        "normal",
+        "fairy"
+    ],
+    "0041": [
+        "poison",
+        "flying"
+    ],
+    "0042": [
+        "poison",
+        "flying"
+    ],
+    "0043": [
+        "grass",
+        "poison"
+    ],
+    "0044": [
+        "grass",
+        "poison"
+    ],
+    "0045": [
+        "grass",
+        "poison"
+    ],
+    "0046": [
+        "bug",
+        "grass"
+    ],
+    "0047": [
+        "bug",
+        "grass"
+    ],
+    "0048": [
+        "bug",
+        "poison"
+    ],
+    "0049": [
+        "bug",
+        "poison"
+    ],
+    "0050": [
+        "ground",
+        "ground"
+    ],
+    "0051": [
+        "ground",
+        "ground"
+    ],
+    "0052": [
+        "normal",
+        "normal"
+    ],
+    "0053": [
+        "normal",
+        "normal"
+    ],
+    "0054": [
+        "water",
+        "water"
+    ],
+    "0055": [
+        "water",
+        "water"
+    ],
+    "0056": [
+        "fighting",
+        "fighting"
+    ],
+    "0057": [
+        "fighting",
+        "fighting"
+    ],
+    "0058": [
+        "fire",
+        "fire"
+    ],
+    "0059": [
+        "fire",
+        "fire"
+    ],
+    "0060": [
+        "water",
+        "water"
+    ],
+    "0061": [
+        "water",
+        "water"
+    ],
+    "0062": [
+        "water",
+        "fighting"
+    ],
+    "0063": [
+        "psychic",
+        "psychic"
+    ],
+    "0064": [
+        "psychic",
+        "psychic"
+    ],
+    "0065": [
+        "psychic",
+        "psychic"
+    ],
+    "0066": [
+        "fighting",
+        "fighting"
+    ],
+    "0067": [
+        "fighting",
+        "fighting"
+    ],
+    "0068": [
+        "fighting",
+        "fighting"
+    ],
+    "0069": [
+        "grass",
+        "poison"
+    ],
+    "0070": [
+        "grass",
+        "poison"
+    ],
+    "0071": [
+        "grass",
+        "poison"
+    ],
+    "0072": [
+        "water",
+        "poison"
+    ],
+    "0073": [
+        "water",
+        "poison"
+    ],
+    "0074": [
+        "rock",
+        "ground"
+    ],
+    "0075": [
+        "rock",
+        "ground"
+    ],
+    "0076": [
+        "rock",
+        "ground"
+    ],
+    "0077": [
+        "fire",
+        "fire"
+    ],
+    "0078": [
+        "fire",
+        "fire"
+    ],
+    "0079": [
+        "water",
+        "psychic"
+    ],
+    "0080": [
+        "water",
+        "psychic"
+    ],
+    "0081": [
+        "electric",
+        "steel"
+    ],
+    "0082": [
+        "electric",
+        "steel"
+    ],
+    "0083": [
+        "normal",
+        "flying"
+    ],
+    "0084": [
+        "normal",
+        "flying"
+    ],
+    "0085": [
+        "normal",
+        "flying"
+    ],
+    "0086": [
+        "water",
+        "water"
+    ],
+    "0087": [
+        "water",
+        "ice"
+    ],
+    "0088": [
+        "poison",
+        "poison"
+    ],
+    "0089": [
+        "poison",
+        "poison"
+    ],
+    "0090": [
+        "water",
+        "water"
+    ],
+    "0091": [
+        "water",
+        "ice"
+    ],
+    "0092": [
+        "ghost",
+        "poison"
+    ],
+    "0093": [
+        "ghost",
+        "poison"
+    ],
+    "0094": [
+        "ghost",
+        "poison"
+    ],
+    "0095": [
+        "rock",
+        "ground"
+    ],
+    "0096": [
+        "psychic",
+        "psychic"
+    ],
+    "0097": [
+        "psychic",
+        "psychic"
+    ],
+    "0098": [
+        "water",
+        "water"
+    ],
+    "0099": [
+        "water",
+        "water"
+    ],
+    "0100": [
+        "electric",
+        "electric"
+    ],
+    "0101": [
+        "electric",
+        "electric"
+    ],
+    "0102": [
+        "grass",
+        "psychic"
+    ],
+    "0103": [
+        "grass",
+        "psychic"
+    ],
+    "0104": [
+        "ground",
+        "ground"
+    ],
+    "0105": [
+        "ground",
+        "ground"
+    ],
+    "0106": [
+        "fighting",
+        "fighting"
+    ],
+    "0107": [
+        "fighting",
+        "fighting"
+    ],
+    "0108": [
+        "normal",
+        "normal"
+    ],
+    "0109": [
+        "poison",
+        "poison"
+    ],
+    "0110": [
+        "poison",
+        "poison"
+    ],
+    "0111": [
+        "ground",
+        "rock"
+    ],
+    "0112": [
+        "ground",
+        "rock"
+    ],
+    "0113": [
+        "normal",
+        "normal"
+    ],
+    "0114": [
+        "grass",
+        "grass"
+    ],
+    "0115": [
+        "normal",
+        "normal"
+    ],
+    "0116": [
+        "water",
+        "water"
+    ],
+    "0117": [
+        "water",
+        "water"
+    ],
+    "0118": [
+        "water",
+        "water"
+    ],
+    "0119": [
+        "water",
+        "water"
+    ],
+    "0120": [
+        "water",
+        "water"
+    ],
+    "0121": [
+        "water",
+        "psychic"
+    ],
+    "0122": [
+        "psychic",
+        "fairy"
+    ],
+    "0123": [
+        "bug",
+        "flying"
+    ],
+    "0124": [
+        "ice",
+        "psychic"
+    ],
+    "0125": [
+        "electric",
+        "electric"
+    ],
+    "0126": [
+        "fire",
+        "fire"
+    ],
+    "0127": [
+        "bug",
+        "bug"
+    ],
+    "0128": [
+        "normal",
+        "normal"
+    ],
+    "0129": [
+        "water",
+        "water"
+    ],
+    "0130": [
+        "water",
+        "flying"
+    ],
+    "0131": [
+        "water",
+        "ice"
+    ],
+    "0132": [
+        "normal",
+        "normal"
+    ],
+    "0133": [
+        "normal",
+        "normal"
+    ],
+    "0134": [
+        "water",
+        "water"
+    ],
+    "0135": [
+        "electric",
+        "electric"
+    ],
+    "0136": [
+        "fire",
+        "fire"
+    ],
+    "0137": [
+        "normal",
+        "normal"
+    ],
+    "0138": [
+        "rock",
+        "water"
+    ],
+    "0139": [
+        "rock",
+        "water"
+    ],
+    "0140": [
+        "rock",
+        "water"
+    ],
+    "0141": [
+        "rock",
+        "water"
+    ],
+    "0142": [
+        "rock",
+        "flying"
+    ],
+    "0143": [
+        "normal",
+        "normal"
+    ],
+    "0144": [
+        "ice",
+        "flying"
+    ],
+    "0145": [
+        "electric",
+        "flying"
+    ],
+    "0146": [
+        "fire",
+        "flying"
+    ],
+    "0147": [
+        "dragon",
+        "dragon"
+    ],
+    "0148": [
+        "dragon",
+        "dragon"
+    ],
+    "0149": [
+        "dragon",
+        "flying"
+    ],
+    "0150": [
+        "psychic",
+        "psychic"
+    ],
+    "0151": [
+        "psychic",
+        "psychic"
+    ],
+    "0152": [
+        "grass",
+        "grass"
+    ],
+    "0153": [
+        "grass",
+        "grass"
+    ],
+    "0154": [
+        "grass",
+        "grass"
+    ],
+    "0155": [
+        "fire",
+        "fire"
+    ],
+    "0156": [
+        "fire",
+        "fire"
+    ],
+    "0157": [
+        "fire",
+        "fire"
+    ],
+    "0158": [
+        "water",
+        "water"
+    ],
+    "0159": [
+        "water",
+        "water"
+    ],
+    "0160": [
+        "water",
+        "water"
+    ],
+    "0161": [
+        "normal",
+        "normal"
+    ],
+    "0162": [
+        "normal",
+        "normal"
+    ],
+    "0163": [
+        "normal",
+        "flying"
+    ],
+    "0164": [
+        "normal",
+        "flying"
+    ],
+    "0165": [
+        "bug",
+        "flying"
+    ],
+    "0166": [
+        "bug",
+        "flying"
+    ],
+    "0167": [
+        "bug",
+        "poison"
+    ],
+    "0168": [
+        "bug",
+        "poison"
+    ],
+    "0169": [
+        "poison",
+        "flying"
+    ],
+    "0170": [
+        "water",
+        "electric"
+    ],
+    "0171": [
+        "water",
+        "electric"
+    ],
+    "0172": [
+        "electric",
+        "electric"
+    ],
+    "0173": [
+        "fairy",
+        "fairy"
+    ],
+    "0174": [
+        "normal",
+        "fairy"
+    ],
+    "0175": [
+        "fairy",
+        "fairy"
+    ],
+    "0176": [
+        "fairy",
+        "flying"
+    ],
+    "0177": [
+        "psychic",
+        "flying"
+    ],
+    "0178": [
+        "psychic",
+        "flying"
+    ],
+    "0179": [
+        "electric",
+        "electric"
+    ],
+    "0180": [
+        "electric",
+        "electric"
+    ],
+    "0181": [
+        "electric",
+        "electric"
+    ],
+    "0182": [
+        "grass",
+        "grass"
+    ],
+    "0183": [
+        "water",
+        "fairy"
+    ],
+    "0184": [
+        "water",
+        "fairy"
+    ],
+    "0185": [
+        "rock",
+        "rock"
+    ],
+    "0186": [
+        "water",
+        "water"
+    ],
+    "0187": [
+        "grass",
+        "flying"
+    ],
+    "0188": [
+        "grass",
+        "flying"
+    ],
+    "0189": [
+        "grass",
+        "flying"
+    ],
+    "0190": [
+        "normal",
+        "normal"
+    ],
+    "0191": [
+        "grass",
+        "grass"
+    ],
+    "0192": [
+        "grass",
+        "grass"
+    ],
+    "0193": [
+        "bug",
+        "flying"
+    ],
+    "0194": [
+        "water",
+        "ground"
+    ],
+    "0195": [
+        "water",
+        "ground"
+    ],
+    "0196": [
+        "psychic",
+        "psychic"
+    ],
+    "0197": [
+        "dark",
+        "dark"
+    ],
+    "0198": [
+        "dark",
+        "flying"
+    ],
+    "0199": [
+        "water",
+        "psychic"
+    ],
+    "0200": [
+        "ghost",
+        "ghost"
+    ],
+    "0201": [
+        "psychic",
+        "psychic"
+    ],
+    "0202": [
+        "psychic",
+        "psychic"
+    ],
+    "0203": [
+        "normal",
+        "psychic"
+    ],
+    "0204": [
+        "bug",
+        "bug"
+    ],
+    "0205": [
+        "bug",
+        "steel"
+    ],
+    "0206": [
+        "normal",
+        "normal"
+    ],
+    "0207": [
+        "ground",
+        "flying"
+    ],
+    "0208": [
+        "steel",
+        "ground"
+    ],
+    "0209": [
+        "fairy",
+        "fairy"
+    ],
+    "0210": [
+        "fairy",
+        "fairy"
+    ],
+    "0211": [
+        "water",
+        "poison"
+    ],
+    "0212": [
+        "bug",
+        "steel"
+    ],
+    "0213": [
+        "bug",
+        "rock"
+    ],
+    "0214": [
+        "bug",
+        "fighting"
+    ],
+    "0215": [
+        "dark",
+        "ice"
+    ],
+    "0216": [
+        "normal",
+        "normal"
+    ],
+    "0217": [
+        "normal",
+        "normal"
+    ],
+    "0218": [
+        "fire",
+        "fire"
+    ],
+    "0219": [
+        "fire",
+        "rock"
+    ],
+    "0220": [
+        "ice",
+        "ground"
+    ],
+    "0221": [
+        "ice",
+        "ground"
+    ],
+    "0222": [
+        "water",
+        "rock"
+    ],
+    "0223": [
+        "water",
+        "water"
+    ],
+    "0224": [
+        "water",
+        "water"
+    ],
+    "0225": [
+        "ice",
+        "flying"
+    ],
+    "0226": [
+        "water",
+        "flying"
+    ],
+    "0227": [
+        "steel",
+        "flying"
+    ],
+    "0228": [
+        "dark",
+        "fire"
+    ],
+    "0229": [
+        "dark",
+        "fire"
+    ],
+    "0230": [
+        "water",
+        "dragon"
+    ],
+    "0231": [
+        "ground",
+        "ground"
+    ],
+    "0232": [
+        "ground",
+        "ground"
+    ],
+    "0233": [
+        "normal",
+        "normal"
+    ],
+    "0234": [
+        "normal",
+        "normal"
+    ],
+    "0235": [
+        "normal",
+        "normal"
+    ],
+    "0236": [
+        "fighting",
+        "fighting"
+    ],
+    "0237": [
+        "fighting",
+        "fighting"
+    ],
+    "0238": [
+        "ice",
+        "psychic"
+    ],
+    "0239": [
+        "electric",
+        "electric"
+    ],
+    "0240": [
+        "fire",
+        "fire"
+    ],
+    "0241": [
+        "normal",
+        "normal"
+    ],
+    "0242": [
+        "normal",
+        "normal"
+    ],
+    "0243": [
+        "electric",
+        "electric"
+    ],
+    "0244": [
+        "fire",
+        "fire"
+    ],
+    "0245": [
+        "water",
+        "water"
+    ],
+    "0246": [
+        "rock",
+        "ground"
+    ],
+    "0247": [
+        "rock",
+        "ground"
+    ],
+    "0248": [
+        "rock",
+        "dark"
+    ],
+    "0249": [
+        "psychic",
+        "flying"
+    ],
+    "0250": [
+        "fire",
+        "flying"
+    ],
+    "0251": [
+        "psychic",
+        "grass"
+    ],
+    "0252": [
+        "grass",
+        "grass"
+    ],
+    "0253": [
+        "grass",
+        "grass"
+    ],
+    "0254": [
+        "grass",
+        "grass"
+    ],
+    "0255": [
+        "fire",
+        "fire"
+    ],
+    "0256": [
+        "fire",
+        "fighting"
+    ],
+    "0257": [
+        "fire",
+        "fighting"
+    ],
+    "0258": [
+        "water",
+        "water"
+    ],
+    "0259": [
+        "water",
+        "ground"
+    ],
+    "0260": [
+        "water",
+        "ground"
+    ],
+    "0261": [
+        "dark",
+        "dark"
+    ],
+    "0262": [
+        "dark",
+        "dark"
+    ],
+    "0263": [
+        "normal",
+        "normal"
+    ],
+    "0264": [
+        "normal",
+        "normal"
+    ],
+    "0265": [
+        "bug",
+        "bug"
+    ],
+    "0266": [
+        "bug",
+        "bug"
+    ],
+    "0267": [
+        "bug",
+        "flying"
+    ],
+    "0268": [
+        "bug",
+        "bug"
+    ],
+    "0269": [
+        "bug",
+        "poison"
+    ],
+    "0270": [
+        "water",
+        "grass"
+    ],
+    "0271": [
+        "water",
+        "grass"
+    ],
+    "0272": [
+        "water",
+        "grass"
+    ],
+    "0273": [
+        "grass",
+        "grass"
+    ],
+    "0274": [
+        "grass",
+        "dark"
+    ],
+    "0275": [
+        "grass",
+        "dark"
+    ],
+    "0276": [
+        "normal",
+        "flying"
+    ],
+    "0277": [
+        "normal",
+        "flying"
+    ],
+    "0278": [
+        "water",
+        "flying"
+    ],
+    "0279": [
+        "water",
+        "flying"
+    ],
+    "0280": [
+        "psychic",
+        "fairy"
+    ],
+    "0281": [
+        "psychic",
+        "fairy"
+    ],
+    "0282": [
+        "psychic",
+        "fairy"
+    ],
+    "0283": [
+        "bug",
+        "water"
+    ],
+    "0284": [
+        "bug",
+        "flying"
+    ],
+    "0285": [
+        "grass",
+        "grass"
+    ],
+    "0286": [
+        "grass",
+        "fighting"
+    ],
+    "0287": [
+        "normal",
+        "normal"
+    ],
+    "0288": [
+        "normal",
+        "normal"
+    ],
+    "0289": [
+        "normal",
+        "normal"
+    ],
+    "0290": [
+        "bug",
+        "ground"
+    ],
+    "0291": [
+        "bug",
+        "flying"
+    ],
+    "0292": [
+        "bug",
+        "ghost"
+    ],
+    "0293": [
+        "normal",
+        "normal"
+    ],
+    "0294": [
+        "normal",
+        "normal"
+    ],
+    "0295": [
+        "normal",
+        "normal"
+    ],
+    "0296": [
+        "fighting",
+        "fighting"
+    ],
+    "0297": [
+        "fighting",
+        "fighting"
+    ],
+    "0298": [
+        "normal",
+        "fairy"
+    ],
+    "0299": [
+        "rock",
+        "rock"
+    ],
+    "0300": [
+        "normal",
+        "normal"
+    ],
+    "0301": [
+        "normal",
+        "normal"
+    ],
+    "0302": [
+        "dark",
+        "ghost"
+    ],
+    "0303": [
+        "steel",
+        "fairy"
+    ],
+    "0304": [
+        "steel",
+        "rock"
+    ],
+    "0305": [
+        "steel",
+        "rock"
+    ],
+    "0306": [
+        "steel",
+        "rock"
+    ],
+    "0307": [
+        "fighting",
+        "psychic"
+    ],
+    "0308": [
+        "fighting",
+        "psychic"
+    ],
+    "0309": [
+        "electric",
+        "electric"
+    ],
+    "0310": [
+        "electric",
+        "electric"
+    ],
+    "0311": [
+        "electric",
+        "electric"
+    ],
+    "0312": [
+        "electric",
+        "electric"
+    ],
+    "0313": [
+        "bug",
+        "bug"
+    ],
+    "0314": [
+        "bug",
+        "bug"
+    ],
+    "0315": [
+        "grass",
+        "poison"
+    ],
+    "0316": [
+        "poison",
+        "poison"
+    ],
+    "0317": [
+        "poison",
+        "poison"
+    ],
+    "0318": [
+        "water",
+        "dark"
+    ],
+    "0319": [
+        "water",
+        "dark"
+    ],
+    "0320": [
+        "water",
+        "water"
+    ],
+    "0321": [
+        "water",
+        "water"
+    ],
+    "0322": [
+        "fire",
+        "ground"
+    ],
+    "0323": [
+        "fire",
+        "ground"
+    ],
+    "0324": [
+        "fire",
+        "fire"
+    ],
+    "0325": [
+        "psychic",
+        "psychic"
+    ],
+    "0326": [
+        "psychic",
+        "psychic"
+    ],
+    "0327": [
+        "normal",
+        "normal"
+    ],
+    "0328": [
+        "ground",
+        "ground"
+    ],
+    "0329": [
+        "ground",
+        "dragon"
+    ],
+    "0330": [
+        "ground",
+        "dragon"
+    ],
+    "0331": [
+        "grass",
+        "grass"
+    ],
+    "0332": [
+        "grass",
+        "dark"
+    ],
+    "0333": [
+        "normal",
+        "flying"
+    ],
+    "0334": [
+        "dragon",
+        "flying"
+    ],
+    "0335": [
+        "normal",
+        "normal"
+    ],
+    "0336": [
+        "poison",
+        "poison"
+    ],
+    "0337": [
+        "rock",
+        "psychic"
+    ],
+    "0338": [
+        "rock",
+        "psychic"
+    ],
+    "0339": [
+        "water",
+        "ground"
+    ],
+    "0340": [
+        "water",
+        "ground"
+    ],
+    "0341": [
+        "water",
+        "water"
+    ],
+    "0342": [
+        "water",
+        "dark"
+    ],
+    "0343": [
+        "ground",
+        "psychic"
+    ],
+    "0344": [
+        "ground",
+        "psychic"
+    ],
+    "0345": [
+        "rock",
+        "grass"
+    ],
+    "0346": [
+        "rock",
+        "grass"
+    ],
+    "0347": [
+        "rock",
+        "bug"
+    ],
+    "0348": [
+        "rock",
+        "bug"
+    ],
+    "0349": [
+        "water",
+        "water"
+    ],
+    "0350": [
+        "water",
+        "water"
+    ],
+    "0351": [
+        "normal",
+        "normal"
+    ],
+    "0352": [
+        "normal",
+        "normal"
+    ],
+    "0353": [
+        "ghost",
+        "ghost"
+    ],
+    "0354": [
+        "ghost",
+        "ghost"
+    ],
+    "0355": [
+        "ghost",
+        "ghost"
+    ],
+    "0356": [
+        "ghost",
+        "ghost"
+    ],
+    "0357": [
+        "grass",
+        "flying"
+    ],
+    "0358": [
+        "psychic",
+        "psychic"
+    ],
+    "0359": [
+        "dark",
+        "dark"
+    ],
+    "0360": [
+        "psychic",
+        "psychic"
+    ],
+    "0361": [
+        "ice",
+        "ice"
+    ],
+    "0362": [
+        "ice",
+        "ice"
+    ],
+    "0363": [
+        "ice",
+        "water"
+    ],
+    "0364": [
+        "ice",
+        "water"
+    ],
+    "0365": [
+        "ice",
+        "water"
+    ],
+    "0366": [
+        "water",
+        "water"
+    ],
+    "0367": [
+        "water",
+        "water"
+    ],
+    "0368": [
+        "water",
+        "water"
+    ],
+    "0369": [
+        "water",
+        "rock"
+    ],
+    "0370": [
+        "water",
+        "water"
+    ],
+    "0371": [
+        "dragon",
+        "dragon"
+    ],
+    "0372": [
+        "dragon",
+        "dragon"
+    ],
+    "0373": [
+        "dragon",
+        "flying"
+    ],
+    "0374": [
+        "steel",
+        "psychic"
+    ],
+    "0375": [
+        "steel",
+        "psychic"
+    ],
+    "0376": [
+        "steel",
+        "psychic"
+    ],
+    "0377": [
+        "rock",
+        "rock"
+    ],
+    "0378": [
+        "ice",
+        "ice"
+    ],
+    "0379": [
+        "steel",
+        "steel"
+    ],
+    "0380": [
+        "dragon",
+        "psychic"
+    ],
+    "0381": [
+        "dragon",
+        "psychic"
+    ],
+    "0382": [
+        "water",
+        "water"
+    ],
+    "0383": [
+        "ground",
+        "ground"
+    ],
+    "0384": [
+        "dragon",
+        "flying"
+    ],
+    "0385": [
+        "steel",
+        "psychic"
+    ],
+    "0386": [
+        "psychic",
+        "psychic"
+    ],
+    "0387": [
+        "grass",
+        "grass"
+    ],
+    "0388": [
+        "grass",
+        "grass"
+    ],
+    "0389": [
+        "grass",
+        "ground"
+    ],
+    "0390": [
+        "fire",
+        "fire"
+    ],
+    "0391": [
+        "fire",
+        "fighting"
+    ],
+    "0392": [
+        "fire",
+        "fighting"
+    ],
+    "0393": [
+        "water",
+        "water"
+    ],
+    "0394": [
+        "water",
+        "water"
+    ],
+    "0395": [
+        "water",
+        "steel"
+    ],
+    "0396": [
+        "normal",
+        "flying"
+    ],
+    "0397": [
+        "normal",
+        "flying"
+    ],
+    "0398": [
+        "normal",
+        "flying"
+    ],
+    "0399": [
+        "normal",
+        "normal"
+    ],
+    "0400": [
+        "normal",
+        "water"
+    ],
+    "0401": [
+        "bug",
+        "bug"
+    ],
+    "0402": [
+        "bug",
+        "bug"
+    ],
+    "0403": [
+        "electric",
+        "electric"
+    ],
+    "0404": [
+        "electric",
+        "electric"
+    ],
+    "0405": [
+        "electric",
+        "electric"
+    ],
+    "0406": [
+        "grass",
+        "poison"
+    ],
+    "0407": [
+        "grass",
+        "poison"
+    ],
+    "0408": [
+        "rock",
+        "rock"
+    ],
+    "0409": [
+        "rock",
+        "rock"
+    ],
+    "0410": [
+        "rock",
+        "steel"
+    ],
+    "0411": [
+        "rock",
+        "steel"
+    ],
+    "0412": [
+        "bug",
+        "bug"
+    ],
+    "0413": [
+        "bug",
+        "grass"
+    ],
+    "0414": [
+        "bug",
+        "flying"
+    ],
+    "0415": [
+        "bug",
+        "flying"
+    ],
+    "0416": [
+        "bug",
+        "flying"
+    ],
+    "0417": [
+        "electric",
+        "electric"
+    ],
+    "0418": [
+        "water",
+        "water"
+    ],
+    "0419": [
+        "water",
+        "water"
+    ],
+    "0420": [
+        "grass",
+        "grass"
+    ],
+    "0421": [
+        "grass",
+        "grass"
+    ],
+    "0422": [
+        "water",
+        "water"
+    ],
+    "0423": [
+        "water",
+        "ground"
+    ],
+    "0424": [
+        "normal",
+        "normal"
+    ],
+    "0425": [
+        "ghost",
+        "flying"
+    ],
+    "0426": [
+        "ghost",
+        "flying"
+    ],
+    "0427": [
+        "normal",
+        "normal"
+    ],
+    "0428": [
+        "normal",
+        "normal"
+    ],
+    "0429": [
+        "ghost",
+        "ghost"
+    ],
+    "0430": [
+        "dark",
+        "flying"
+    ],
+    "0431": [
+        "normal",
+        "normal"
+    ],
+    "0432": [
+        "normal",
+        "normal"
+    ],
+    "0433": [
+        "psychic",
+        "psychic"
+    ],
+    "0434": [
+        "poison",
+        "dark"
+    ],
+    "0435": [
+        "poison",
+        "dark"
+    ],
+    "0436": [
+        "steel",
+        "psychic"
+    ],
+    "0437": [
+        "steel",
+        "psychic"
+    ],
+    "0438": [
+        "rock",
+        "rock"
+    ],
+    "0439": [
+        "psychic",
+        "fairy"
+    ],
+    "0440": [
+        "normal",
+        "normal"
+    ],
+    "0441": [
+        "normal",
+        "flying"
+    ],
+    "0442": [
+        "ghost",
+        "dark"
+    ],
+    "0443": [
+        "dragon",
+        "ground"
+    ],
+    "0444": [
+        "dragon",
+        "ground"
+    ],
+    "0445": [
+        "dragon",
+        "ground"
+    ],
+    "0446": [
+        "normal",
+        "normal"
+    ],
+    "0447": [
+        "fighting",
+        "fighting"
+    ],
+    "0448": [
+        "fighting",
+        "steel"
+    ],
+    "0449": [
+        "ground",
+        "ground"
+    ],
+    "0450": [
+        "ground",
+        "ground"
+    ],
+    "0451": [
+        "poison",
+        "bug"
+    ],
+    "0452": [
+        "poison",
+        "dark"
+    ],
+    "0453": [
+        "poison",
+        "fighting"
+    ],
+    "0454": [
+        "poison",
+        "fighting"
+    ],
+    "0455": [
+        "grass",
+        "grass"
+    ],
+    "0456": [
+        "water",
+        "water"
+    ],
+    "0457": [
+        "water",
+        "water"
+    ],
+    "0458": [
+        "water",
+        "flying"
+    ],
+    "0459": [
+        "grass",
+        "ice"
+    ],
+    "0460": [
+        "grass",
+        "ice"
+    ],
+    "0461": [
+        "dark",
+        "ice"
+    ],
+    "0462": [
+        "electric",
+        "steel"
+    ],
+    "0463": [
+        "normal",
+        "normal"
+    ],
+    "0464": [
+        "ground",
+        "rock"
+    ],
+    "0465": [
+        "grass",
+        "grass"
+    ],
+    "0466": [
+        "electric",
+        "electric"
+    ],
+    "0467": [
+        "fire",
+        "fire"
+    ],
+    "0468": [
+        "fairy",
+        "flying"
+    ],
+    "0469": [
+        "bug",
+        "flying"
+    ],
+    "0470": [
+        "grass",
+        "grass"
+    ],
+    "0471": [
+        "ice",
+        "ice"
+    ],
+    "0472": [
+        "ground",
+        "flying"
+    ],
+    "0473": [
+        "ice",
+        "ground"
+    ],
+    "0474": [
+        "normal",
+        "normal"
+    ],
+    "0475": [
+        "psychic",
+        "fighting"
+    ],
+    "0476": [
+        "rock",
+        "steel"
+    ],
+    "0477": [
+        "ghost",
+        "ghost"
+    ],
+    "0478": [
+        "ice",
+        "ghost"
+    ],
+    "0479": [
+        "electric",
+        "ghost"
+    ],
+    "0480": [
+        "psychic",
+        "psychic"
+    ],
+    "0481": [
+        "psychic",
+        "psychic"
+    ],
+    "0482": [
+        "psychic",
+        "psychic"
+    ],
+    "0483": [
+        "steel",
+        "dragon"
+    ],
+    "0484": [
+        "water",
+        "dragon"
+    ],
+    "0485": [
+        "fire",
+        "steel"
+    ],
+    "0486": [
+        "normal",
+        "normal"
+    ],
+    "0487": [
+        "ghost",
+        "dragon"
+    ],
+    "0488": [
+        "psychic",
+        "psychic"
+    ],
+    "0489": [
+        "water",
+        "water"
+    ],
+    "0490": [
+        "water",
+        "water"
+    ],
+    "0491": [
+        "dark",
+        "dark"
+    ],
+    "0492": [
+        "grass",
+        "grass"
+    ],
+    "0493": [
+        "normal",
+        "normal"
+    ],
+    "0494": [
+        "psychic",
+        "fire"
+    ],
+    "0495": [
+        "grass",
+        "grass"
+    ],
+    "0496": [
+        "grass",
+        "grass"
+    ],
+    "0497": [
+        "grass",
+        "grass"
+    ],
+    "0498": [
+        "fire",
+        "fire"
+    ],
+    "0499": [
+        "fire",
+        "fighting"
+    ],
+    "0500": [
+        "fire",
+        "fighting"
+    ],
+    "0501": [
+        "water",
+        "water"
+    ],
+    "0502": [
+        "water",
+        "water"
+    ],
+    "0503": [
+        "water",
+        "water"
+    ],
+    "0504": [
+        "normal",
+        "normal"
+    ],
+    "0505": [
+        "normal",
+        "normal"
+    ],
+    "0506": [
+        "normal",
+        "normal"
+    ],
+    "0507": [
+        "normal",
+        "normal"
+    ],
+    "0508": [
+        "normal",
+        "normal"
+    ],
+    "0509": [
+        "dark",
+        "dark"
+    ],
+    "0510": [
+        "dark",
+        "dark"
+    ],
+    "0511": [
+        "grass",
+        "grass"
+    ],
+    "0512": [
+        "grass",
+        "grass"
+    ],
+    "0513": [
+        "fire",
+        "fire"
+    ],
+    "0514": [
+        "fire",
+        "fire"
+    ],
+    "0515": [
+        "water",
+        "water"
+    ],
+    "0516": [
+        "water",
+        "water"
+    ],
+    "0517": [
+        "psychic",
+        "psychic"
+    ],
+    "0518": [
+        "psychic",
+        "psychic"
+    ],
+    "0519": [
+        "normal",
+        "flying"
+    ],
+    "0520": [
+        "normal",
+        "flying"
+    ],
+    "0521": [
+        "normal",
+        "flying"
+    ],
+    "0522": [
+        "electric",
+        "electric"
+    ],
+    "0523": [
+        "electric",
+        "electric"
+    ],
+    "0524": [
+        "rock",
+        "rock"
+    ],
+    "0525": [
+        "rock",
+        "rock"
+    ],
+    "0526": [
+        "rock",
+        "rock"
+    ],
+    "0527": [
+        "psychic",
+        "flying"
+    ],
+    "0528": [
+        "psychic",
+        "flying"
+    ],
+    "0529": [
+        "ground",
+        "ground"
+    ],
+    "0530": [
+        "ground",
+        "steel"
+    ],
+    "0531": [
+        "normal",
+        "normal"
+    ],
+    "0532": [
+        "fighting",
+        "fighting"
+    ],
+    "0533": [
+        "fighting",
+        "fighting"
+    ],
+    "0534": [
+        "fighting",
+        "fighting"
+    ],
+    "0535": [
+        "water",
+        "water"
+    ],
+    "0536": [
+        "water",
+        "ground"
+    ],
+    "0537": [
+        "water",
+        "ground"
+    ],
+    "0538": [
+        "fighting",
+        "fighting"
+    ],
+    "0539": [
+        "fighting",
+        "fighting"
+    ],
+    "0540": [
+        "bug",
+        "grass"
+    ],
+    "0541": [
+        "bug",
+        "grass"
+    ],
+    "0542": [
+        "bug",
+        "grass"
+    ],
+    "0543": [
+        "bug",
+        "poison"
+    ],
+    "0544": [
+        "bug",
+        "poison"
+    ],
+    "0545": [
+        "bug",
+        "poison"
+    ],
+    "0546": [
+        "grass",
+        "fairy"
+    ],
+    "0547": [
+        "grass",
+        "fairy"
+    ],
+    "0548": [
+        "grass",
+        "grass"
+    ],
+    "0549": [
+        "grass",
+        "grass"
+    ],
+    "0550": [
+        "water",
+        "water"
+    ],
+    "0551": [
+        "ground",
+        "dark"
+    ],
+    "0552": [
+        "ground",
+        "dark"
+    ],
+    "0553": [
+        "ground",
+        "dark"
+    ],
+    "0554": [
+        "fire",
+        "fire"
+    ],
+    "0555": [
+        "fire",
+        "fire"
+    ],
+    "0556": [
+        "grass",
+        "grass"
+    ],
+    "0557": [
+        "bug",
+        "rock"
+    ],
+    "0558": [
+        "bug",
+        "rock"
+    ],
+    "0559": [
+        "dark",
+        "fighting"
+    ],
+    "0560": [
+        "dark",
+        "fighting"
+    ],
+    "0561": [
+        "psychic",
+        "flying"
+    ],
+    "0562": [
+        "ghost",
+        "ghost"
+    ],
+    "0563": [
+        "ghost",
+        "ghost"
+    ],
+    "0564": [
+        "water",
+        "rock"
+    ],
+    "0565": [
+        "water",
+        "rock"
+    ],
+    "0566": [
+        "rock",
+        "flying"
+    ],
+    "0567": [
+        "rock",
+        "flying"
+    ],
+    "0568": [
+        "poison",
+        "poison"
+    ],
+    "0569": [
+        "poison",
+        "poison"
+    ],
+    "0570": [
+        "dark",
+        "dark"
+    ],
+    "0571": [
+        "dark",
+        "dark"
+    ],
+    "0572": [
+        "normal",
+        "normal"
+    ],
+    "0573": [
+        "normal",
+        "normal"
+    ],
+    "0574": [
+        "psychic",
+        "psychic"
+    ],
+    "0575": [
+        "psychic",
+        "psychic"
+    ],
+    "0576": [
+        "psychic",
+        "psychic"
+    ],
+    "0577": [
+        "psychic",
+        "psychic"
+    ],
+    "0578": [
+        "psychic",
+        "psychic"
+    ],
+    "0579": [
+        "psychic",
+        "psychic"
+    ],
+    "0580": [
+        "water",
+        "flying"
+    ],
+    "0581": [
+        "water",
+        "flying"
+    ],
+    "0582": [
+        "ice",
+        "ice"
+    ],
+    "0583": [
+        "ice",
+        "ice"
+    ],
+    "0584": [
+        "ice",
+        "ice"
+    ],
+    "0585": [
+        "normal",
+        "grass"
+    ],
+    "0586": [
+        "normal",
+        "grass"
+    ],
+    "0587": [
+        "electric",
+        "flying"
+    ],
+    "0588": [
+        "bug",
+        "bug"
+    ],
+    "0589": [
+        "bug",
+        "steel"
+    ],
+    "0590": [
+        "grass",
+        "poison"
+    ],
+    "0591": [
+        "grass",
+        "poison"
+    ],
+    "0592": [
+        "water",
+        "ghost"
+    ],
+    "0593": [
+        "water",
+        "ghost"
+    ],
+    "0594": [
+        "water",
+        "water"
+    ],
+    "0595": [
+        "bug",
+        "electric"
+    ],
+    "0596": [
+        "bug",
+        "electric"
+    ],
+    "0597": [
+        "grass",
+        "steel"
+    ],
+    "0598": [
+        "grass",
+        "steel"
+    ],
+    "0599": [
+        "steel",
+        "steel"
+    ],
+    "0600": [
+        "steel",
+        "steel"
+    ],
+    "0601": [
+        "steel",
+        "steel"
+    ],
+    "0602": [
+        "electric",
+        "electric"
+    ],
+    "0603": [
+        "electric",
+        "electric"
+    ],
+    "0604": [
+        "electric",
+        "electric"
+    ],
+    "0605": [
+        "psychic",
+        "psychic"
+    ],
+    "0606": [
+        "psychic",
+        "psychic"
+    ],
+    "0607": [
+        "ghost",
+        "fire"
+    ],
+    "0608": [
+        "ghost",
+        "fire"
+    ],
+    "0609": [
+        "ghost",
+        "fire"
+    ],
+    "0610": [
+        "dragon",
+        "dragon"
+    ],
+    "0611": [
+        "dragon",
+        "dragon"
+    ],
+    "0612": [
+        "dragon",
+        "dragon"
+    ],
+    "0613": [
+        "ice",
+        "ice"
+    ],
+    "0614": [
+        "ice",
+        "ice"
+    ],
+    "0615": [
+        "ice",
+        "ice"
+    ],
+    "0616": [
+        "bug",
+        "bug"
+    ],
+    "0617": [
+        "bug",
+        "bug"
+    ],
+    "0618": [
+        "ground",
+        "electric"
+    ],
+    "0619": [
+        "fighting",
+        "fighting"
+    ],
+    "0620": [
+        "fighting",
+        "fighting"
+    ],
+    "0621": [
+        "dragon",
+        "dragon"
+    ],
+    "0622": [
+        "ground",
+        "ghost"
+    ],
+    "0623": [
+        "ground",
+        "ghost"
+    ],
+    "0624": [
+        "dark",
+        "steel"
+    ],
+    "0625": [
+        "dark",
+        "steel"
+    ],
+    "0626": [
+        "normal",
+        "normal"
+    ],
+    "0627": [
+        "normal",
+        "flying"
+    ],
+    "0628": [
+        "normal",
+        "flying"
+    ],
+    "0629": [
+        "dark",
+        "flying"
+    ],
+    "0630": [
+        "dark",
+        "flying"
+    ],
+    "0631": [
+        "fire",
+        "fire"
+    ],
+    "0632": [
+        "bug",
+        "steel"
+    ],
+    "0633": [
+        "dark",
+        "dragon"
+    ],
+    "0634": [
+        "dark",
+        "dragon"
+    ],
+    "0635": [
+        "dark",
+        "dragon"
+    ],
+    "0636": [
+        "bug",
+        "fire"
+    ],
+    "0637": [
+        "bug",
+        "fire"
+    ],
+    "0638": [
+        "steel",
+        "fighting"
+    ],
+    "0639": [
+        "rock",
+        "fighting"
+    ],
+    "0640": [
+        "grass",
+        "fighting"
+    ],
+    "0641": [
+        "flying",
+        "flying"
+    ],
+    "0642": [
+        "electric",
+        "flying"
+    ],
+    "0643": [
+        "dragon",
+        "fire"
+    ],
+    "0644": [
+        "dragon",
+        "electric"
+    ],
+    "0645": [
+        "ground",
+        "flying"
+    ],
+    "0646": [
+        "dragon",
+        "ice"
+    ],
+    "0647": [
+        "water",
+        "fighting"
+    ],
+    "0648": [
+        "normal",
+        "psychic"
+    ],
+    "0649": [
+        "bug",
+        "steel"
+    ]
 }

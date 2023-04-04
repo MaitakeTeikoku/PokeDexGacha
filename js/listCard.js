@@ -49,9 +49,9 @@ async function dexListCard(data) {
         li1.classList.add("li1");
         li1.classList.add("li1List");
         
-        /*
+        
         let typeSum = "　";
-        */
+        
         let name = "??????";
         
         // 取得しているか判定
@@ -72,6 +72,15 @@ async function dexListCard(data) {
                 typeSum = type1Jpn + " / " + type2Jpn;
             }
             */
+            const type1 = pokeTypesList[numDexStr][0];
+            const type2 = pokeTypesList[numDexStr][1];
+
+            typeSum = typeJpn[type1];
+            if (type1 != type2) {
+                typeSum = typeJpn[type1] + " / " + typeJpn[type2];
+            }
+
+
             /*
             // PokeAPIに接続
             let resSpecies = await fetch("https://pokeapi.co/api/v2/pokemon-species/" + i);
@@ -117,6 +126,12 @@ async function dexListCard(data) {
         li2Name.innerHTML = name;
         ul2.appendChild(li2Name);
         li2Name.classList.add("li2Name");
+
+        // タイプを追加
+        var li2Type = document.createElement('li');
+        li2Type.innerHTML = typeSum;
+        ul2.appendChild(li2Type);
+        li2Type.classList.add("li2Type");
 
         // レア度と色違いによって背景色を変更
         if (listRare4.includes(i)) {
