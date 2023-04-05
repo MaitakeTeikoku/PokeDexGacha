@@ -1,5 +1,5 @@
 // カードデータにアクセスするAPIのURLを指定
-const urlApi = 'https://script.google.com/macros/s/AKfycbx3O8iL3WiAiFpw4NOE-DOBgeTGjertn5bQdmvMdVl_MBDtDqwQSlnnwHtn_11-ud6Z/exec';
+const urlApi = 'https://script.google.com/macros/s/AKfycbxbplj5KpDW9xA9FVpQvH1T4fh-jYyQ8baenKUBvgLmLNVziq68PK_vGC2YGDOkIkrH/exec';
 
 let gachaTodayMax;
 let dexRange;
